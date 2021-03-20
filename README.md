@@ -18,5 +18,5 @@ The data used in the experiments is available on:
 - scikit-learn
 - scipy
 
-## Citing comboFM
+## Citing comboLTR
 
