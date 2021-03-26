@@ -4,7 +4,7 @@
 
 comboLTR is a new polynomial regression-based framework for modeling anti-cancer effects of drug combinations in various doses and across different cancer cell lines. It is implemented in Python. 
 
-The data used in the experiments is available on: 
+The data used in the experiments is available on: https://doi.org/10.5281/zenodo.4625084.
 
 ## Instructions
 
