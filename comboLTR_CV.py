@@ -355,13 +355,13 @@ print(job_id)
 ### Load training data with single drug cell data
 ## data directory
 cwd = os.getcwd()
-sdir = '/scratch/work/wangt8/projects/LTR/ISMB_2021/Data/New'
-outdir = cwd + "/result_Full_New_revision/" + job_id + '/'
+sdir = '.'
+outdir = cwd + "/comboLTR_results/" + job_id + '/'
 print(outdir)
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 
-with open(sdir + '/CV_Folds_%s_%s_NoSmallCombo_New.List.Pickle' %(i_scene, dataset), 'rb') as f:
+with open(sdir + '/CV_Folds_%s_%s.List.Pickle' %(i_scene, dataset), 'rb') as f:
     CV_indices_list = pickle.load(f)
 print('CV splits: ', [len(j) for i in CV_indices_list for j in i])
 
