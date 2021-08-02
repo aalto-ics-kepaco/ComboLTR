@@ -218,7 +218,7 @@ def main(CV_indices_list, n_order, n_rank, n_repeat, lossdegree=0, \
     time2 = time.time()
     print('Total training time(s): ', time2 - time00)
     pcorr = np.corrcoef(y, yprediction)[0, 1]
-    rmse = np.sqrt(np.mean((y*ymax+ymean - yprediction*ymax-ymean) ** 2))
+    rmse = np.sqrt(np.mean((y*ymax+ymean - yprediction*ymax+ymean) ** 2))
     scorr, _ = spearmanr(y, yprediction)
     np.savetxt((outdir + "y_full_" \
                 + "order-" \
